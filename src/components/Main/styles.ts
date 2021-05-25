@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Svg = styled.svg`
+export const Play = styled.svg`
   cursor: pointer;
 
   #magGroup {
@@ -27,5 +27,32 @@ export const Svg = styled.svg`
   }
   :hover #mag2 {
     transform: translateX(0%);
+  }
+`
+
+export const BigGear = styled.svg`
+  #bigGear {
+    transition: all 1s ease-in-out;
+    transform-origin: center center;
+  }
+`
+
+export const SmallGear = styled.svg`
+  #smallGear {
+    transition: all 1s ease-in-out;
+    transform-origin: center center;
+  }
+`
+
+export const Gears = styled.div`
+  cursor: pointer;
+  margin-left: 10px;
+
+  :hover #smallGear {
+    transform: rotate(-360deg);
+  }
+
+  :hover #bigGear {
+    transform: rotate(180deg);
   }
 `
